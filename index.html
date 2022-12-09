@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Game</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Prosto+One&family=Source+Code+Pro:wght@600&family=Viaoda+Libre&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+   <div class="mainContainer">
+      <div class="row flex-top justify-content-center">
+   <div class="header">
+      <p id="par"> </p>
+      <button id="btn">ИГРАТЬ</button>
+      <p class="description">Проверь, насколько хорошо ты помнишь крылатые фразы из фильмов. Нажимай "Играть", далее "Выбрать" вопрос. Рандомно выберется фраза из фильма, а тебе надо будет угадать из какого она фильма </p>
+      <img id="cat" src="https://www.kasandbox.org/programming-images/misc/cat-walk.gif" width="100px" height ="100px">
+   </div>
+
+   <div class="container">
+<h3>Угадай фильм по фразе!</h3>
+<button id="startBtn">Выбирай вопрос</button>
+<p class="timer"></p>
+<h2 id="numberArray"></h2>
+
+</div>
+
+<div class="phrase">
+      
+      <p class="activePhrase"></p>
+  
+   <h4> Из какого фильма эта фраза: </h4>
+   <textarea type="text" id="guess" class="inputField" placeholder="Ваш ответ"></textarea><br>
+   <button id="addBtn">Добавить</button>
+
+</div>
+ </div>
+</div>
+
+   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <script src = "script.js"></script>
+</body>
+</html>

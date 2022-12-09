@@ -1,0 +1,175 @@
+body{
+   background-image: url(image11.jpg);
+   background-size: 50%;
+   background-position: top;
+}
+.mainContainer{
+   background-color: rgba(234, 239, 245, 0.8);
+   width: 85%;
+   min-height: 80vh;
+   margin: 5% 3% 5% 6%;
+   border-radius: 70px;
+   border: none;
+}
+
+.header{
+   text-align: center;
+   margin-top: 50px;
+}
+#par{
+   font-family: 'Hachi Maru Pop', cursive;
+   font-size: 70px;
+   font-weight: 900;
+   color: rgb(202, 114, 14);
+   text-shadow: 4px 4px 4px #fff;
+   margin-bottom: 10px;
+   }
+.description{
+   font-family: 'Hachi Maru Pop', cursive;
+   font-size: 25px;
+   color: rgb(168, 96, 14);
+   padding: 3% 15%;
+   text-align: center;
+}
+#btn{
+   font-family: 'Source Code Pro', monospace;
+   font-weight: bold;
+   color:rgb(119, 27, 4);
+   padding: 10px 20px;
+   width: 150px;
+   font-size: 30px;
+   margin-top: 10px;
+   border: 3px solid rgb(202, 114, 14);
+   border-radius: 20px;
+   }
+   #btn:hover{
+      background-color: rgb(17, 107, 180);
+      border: 5px solid rgb(1, 59, 28);
+      color:#fff;
+   }
+
+.container, .phrase{
+   display: none;
+   text-align: center;
+   margin: 5px;
+   }
+h3{
+   font-family: 'Hachi Maru Pop', cursive;
+   font-size: 33px;
+   font-weight: 800;
+   padding-top: 20px;
+   color:rgb(27, 99, 192);
+   }
+   h4{
+      font-family: 'Hachi Maru Pop', cursive;
+      font-size: 25px;
+      font-weight: 800;
+      padding-bottom: 10px;
+      color:rgb(27, 99, 192); 
+      
+   }
+#startBtn, #addBtn{
+   font-family: 'Source Code Pro', monospace;
+   font-weight: bold;
+   color:rgb(116, 28, 6);
+   padding: 10px;
+   width: 300px;
+   font-size: 20px;
+   margin-top: 15px;
+   border: 3px solid rgb(27, 99, 192);
+   border-radius: 20px;
+}
+
+#startBtn:hover, #addBtn:hover{
+   background-color: rgb(27, 99, 192);
+      border: 5px solid rgb(1, 59, 28);
+      color:#fff;
+}
+
+.phrase{
+   padding-top: 10px;
+   padding-bottom: 30px;
+   
+}
+
+.activePhrase{
+  display: none;
+   font-family: 'Source Code Pro', monospace;
+   font-size: 22px;
+   color:rgb(116, 28, 6);
+   padding: 15px;
+   background-color: #fff;
+   border: 3px solid rgb(27, 99, 192);
+   margin: 0px 50px 40px;
+   text-align: center;
+   border-radius: 10px;
+}
+textarea:focus, input:focus{
+outline: none;
+}
+.inputField{
+  
+   font-family: 'Source Code Pro', monospace;
+   font-size: 17px;
+   padding: 10px;
+   width: 350px;
+   height: 100px;
+   border: 3px solid rgb(27, 99, 192);
+   border-radius: 20px;
+   word-break: break-all;
+}
+.timer{
+   font-family: 'Source Code Pro', monospace;
+   font-size: 40px;
+   margin-top: 5px;
+   margin-bottom: 0;
+   color: rgb(27, 99, 192);
+   text-shadow: 1px 1px 2px rgb(167, 219, 150), 0 0 1em rgb(54, 197, 219), 0 0 1em rgb(221, 188, 150);
+   display: none;
+}
+
+@media all and (max-width:800px){
+   
+   #par{
+      font-size: 40px;
+      font-weight: 800;
+}
+.description{
+  font-size: 19px;
+}
+h3{
+   font-size: 23px;
+}
+h4{
+   font-size: 20px;
+}
+.activePhrase{
+  font-size: 19px;
+  height: auto;
+  
+}
+}
+
+@media all and (max-width:400px){
+   
+   #par{
+      font-size: 30px;
+      font-weight: 700;
+}
+#startBtn, #addBtn, .inputField, .activePhrase{
+   padding: 10px;
+   width: 200px;
+}
+#startBtn, #addBtn{
+   font-size: 17px;
+}
+.activePhrase{
+   font-size: 17px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.timer{
+   font-size: 33px;
+
+}
+}
